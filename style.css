@@ -1,0 +1,33 @@
+
+.heading{
+    color:white;
+    font-size: medium;
+}
+
+
+.text-muted{
+    font-size: small;
+}
+
+.page-heading{
+    text-align: center;
+    font-weight: bold;
+    background-image: url(heading2.png);   
+}
+
+.head1{
+    color: red;
+}
+
+.head2{
+    color:white;
+}
+
+body{
+    background-image: url(marvel.jpg);
+}
+
+
+
+
+
