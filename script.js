@@ -3,6 +3,33 @@
 
 var url = 'https://gateway.marvel.com/v1/public/characters?ts=1&apikey=f8b7f3be1da87fe350873705c6a19730&hash=0bcde198dddfb73187db42904e7c9411';
 
+var titlee = document.createElement('h1');
+titlee.classList.add('page-heading');
+let attachment = document.querySelector('body');
+attachment.insertAdjacentElement('afterbegin', titlee)
+let head = document.getElementsByClassName('page-heading')[0];
+
+
+var marvell = document.createElement('span');
+marvell.classList.add('head1');
+marvell.innerText = 'MARVEL';
+head.append(marvell);
+
+var character = document.createElement('span');
+character.classList.add('head2');
+character.innerText = 'CHARACTERS';
+head.append(character);
+
+let divison = document.createElement('div');
+divison.classList.add('container');
+divison.classList.add('my-5');
+head.insertAdjacentElement('afterend', divison)
+let div = document.getElementsByClassName('container')[0];
+
+let divison2 = document.createElement('div');
+divison2.classList.add('row');
+div.insertAdjacentElement('afterbegin', divison2);
+
 async function marvel() {
 
     try {
@@ -43,7 +70,7 @@ async function marvel() {
     } catch (error) {
         console.log(error);
     }
-    
+
 }
 marvel();
 
